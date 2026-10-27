@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #202b45;
+    background-color: white;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: white;
+    border-bottom: 1px solid #e1e5ef;
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #202b45;
+    font-size: 22px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #202b45;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #6554d9;
+}
+
+.nav-links .hire {
+    background-color: #6554d9;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 5px;
+}
+
+/* Home section */
+.home {
+    width: 85%;
+    margin: auto;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: #f6f8ff;
+}
+
+.intro {
+    max-width: 520px;
+}
+
+.small-heading {
+    color: #6554d9;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.intro h2 {
+    color: #6554d9;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.intro > p:not(.small-heading) {
+    color: #626d82;
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 22px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6554d9;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.second-btn {
+    background-color: white;
+    color: #202b45;
+    border: 1px solid #d9dfeb;
+}
+
+.numbers {
+    display: flex;
+    gap: 45px;
+    margin-top: 30px;
+}
+
+.numbers h3 {
+    font-size: 24px;
+}
+
+.numbers p {
+    font-size: 13px;
+    color: #626d82;
+}
+
+.profile {
+    text-align: center;
+}
+
+.circle {
+    width: 210px;
+    height: 210px;
+    border: 7px solid #6554d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: #6554d9;
+    background-color: white;
+}
+
+.profile p {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #626d82;
+}
+
+/* Common section settings */
+.section {
+    padding: 65px 9%;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* About section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    width: 55%;
+}
+
+.about-text > p:not(.small-heading) {
+    color: #626d82;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.about-info {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.info-box {
+    background-color: #f6f8fc;
+    padding: 15px;
+    border: 1px solid #e0e5ef;
+    border-radius: 8px;
+}
+
+.info-box h4 {
+    font-size: 14px;
+}
+
+.info-box p {
+    color: #626d82;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+/* Skills section */
+.skills {
+    background-color: #f6f8fc;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.skill-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e0e5ef;
+    border-radius: 8px;
+}
+
+.skill-box h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.skill-box p {
+    color: #626d82;
+    font-size: 13px;
+}
+
+/* Projects section */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #e0e5ef;
+    border-radius: 9px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.project-image {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.orange {
+    background: linear-gradient(120deg, #ffad42, #f06c55);
+}
+
+.blue {
+    background: linear-gradient(120deg, #6554d9, #42a5df);
+}
+
+.green {
+    background: linear-gradient(120deg, #22b89a, #36b6d1);
+}
+
+.project-content {
+    padding: 15px;
+}
+
+.project-content h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.project-content p {
+    font-size: 13px;
+    color: #626d82;
+}
+
+.tags {
+    margin: 12px 0;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #efedff;
+    color: #6554d9;
+    padding: 3px 9px;
+    margin-right: 5px;
+    border-radius: 12px;
+    font-size: 11px;
+}
+
+.project-content a {
+    color: #6554d9;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* Education section */
+.education {
+    background-color: #f6f8fc;
+}
+
+.education-intro {
+    color: #626d82;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #202b45;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 13px;
+    font-size: 13px;
+}
+
+td {
+    border-bottom: 1px solid #e0e5ef;
+}
+
+/* Contact section */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-text {
+    width: 40%;
+}
+
+.contact-text > p:not(.small-heading) {
+    color: #626d82;
+    font-size: 14px;
+}
+
+.contact-details {
+    margin-top: 22px;
+}
+
+.contact-details p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.contact-details p:nth-child(2),
+.contact-details p:nth-child(4) {
+    margin-bottom: 15px;
+    color: #626d82;
+}
+
+form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d9dfeb;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f8f9fc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #6554d9;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5040bd;
+}
+
+/* Footer */
+footer {
+    background-color: #202b45;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        margin: 0;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 45px 0;
+    }
+
+    .intro h1 {
+        font-size: 34px;
+    }
+
+    .intro h2 {
+        font-size: 23px;
+    }
+
+    .profile {
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .circle {
+        width: 160px;
+        height: 160px;
+        font-size: 42px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-text,
+    .about-info {
+        width: 100%;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-text,
+    form {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .section {
+        padding: 45px 6%;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
+    }
+
+    .numbers {
+        gap: 25px;
+    }
+
+    .numbers h3 {
+        font-size: 20px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .education {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 500px;
+    }
+
+    footer a {
+        margin: 0 5px;
+    }
+}
+
